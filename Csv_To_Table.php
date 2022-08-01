@@ -14,7 +14,7 @@ if (($open = fopen("data.csv", "r")) !== FALSE)
 
 $c=count($arr);
 
-
+//This Works for only 2 columns
 for ($i=0;$i<$c;$i++)
 {
    if($i==0)
