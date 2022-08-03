@@ -1,7 +1,7 @@
 <?php
 
 if (($open = fopen("data.csv", "r")) !== FALSE) 
-  {
+{
   
     while (($data = fgetcsv($open, 1000, ",")) !== FALSE) 
     {        
@@ -9,16 +9,14 @@ if (($open = fopen("data.csv", "r")) !== FALSE)
     }
   
     fclose($open);
-  }
+  
+  $c=count($arr);
 
-
-$c=count($arr);
-
-//This Works for only 2 columns
-for ($i=0;$i<$c;$i++)
-{
-   if($i==0)
-   {
+   //This Works for only 2 columns
+  for ($i=0;$i<$c;$i++)
+  {
+    if($i==0)
+    {
        echo "<table>
       <thead><tr>
        <th>".$arr[$i][0]."</th>
@@ -26,14 +24,21 @@ for ($i=0;$i<$c;$i++)
       </tr></thead>   
        <tbody>";
      continue;
-   }
-  echo "<tr>
+    }
+     echo "<tr>
          <td>".$arr[$i][0]."</td>  
           <td>".$arr[$i][1]."</td>  
         </tr>";
+   }
+  echo "</tbody>
+  </table>";
 }
-echo "</tbody>
-</table>";
+else
+{
+ echo "Error Occured while opening the file."; 
+}
+
+
 
 //---Sample Table Element--------------
 
