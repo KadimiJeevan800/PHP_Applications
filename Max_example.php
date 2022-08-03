@@ -10,10 +10,6 @@
     {
       $max=$arr[$i];
     }
-  else
-    {
-      continue;
-    }
  }
 
 echo "Maximum element in array :".$max;
