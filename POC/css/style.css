@@ -1,0 +1,43 @@
+table, th, td {
+  border: 2px solid black;
+text-align: center;
+
+}
+table
+{
+ width: 75%;
+}
+body
+{
+background-color:rgb(111, 203, 234);
+color:rgb(3, 3, 65);
+}
+button
+{
+background-color:orange;
+color:white;
+}
+h3
+{
+color: black;
+background-color:white;
+border:2px solid red;
+}
+h1
+{
+  text-shadow: 2px 2px 5px red;
+ color:white;
+background-color:black;
+ border:3px solid white;
+ align-content : center;
+}
+#logout
+{
+background-color:white;
+}
+h2
+{
+text-shadow: 2px 2px 5px white;
+ color:black;
+
+}
