@@ -1,0 +1,7 @@
+<VirtualHost *:80>
+    ##ServerAdmin webmaster@dummy-host2.example.com
+    DocumentRoot "C:\xampp\htdocs\Jeevan\POC\App.php"
+    ServerName sample-poc.local
+    ErrorLog "logs/dummy-host2.example.com-error.log"
+    ##CustomLog "logs/dummy-host2.example.com-access.log" common
+</VirtualHost>
