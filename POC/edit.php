@@ -1,5 +1,5 @@
 <?php
-//It will Edit the post by taking the Post-ID 
+//It will edit the post by taking the Post-ID 
 include 'connect.php';
 session_start();
 
